@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
 // import styles from './App.scss'
-import NavigateContainer from './container/NavigateContainer'
 import Routes from './routes'
 
 class App extends Component {
