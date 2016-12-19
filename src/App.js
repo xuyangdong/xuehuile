@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
-import './App.css';
-// import styles from './App.scss'
+import styles from './App.scss'
 import Routes from './routes'
 
 class App extends Component {

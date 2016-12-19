@@ -8,10 +8,13 @@ const LeftBoard = React.createClass({
       menuList:[{'基础数据':['学段','年级','学科']}]
     }
   },
+  handleSelect({ item, key, selectedKeys }){
+    this.props.onSelect(key)
+  },
   render(){
     const {menuList} = this.props
     return (
-      <Menu style={{height: '100%'}} mode="inline" defaultOpenKeys={[Object.keys(menuList[0])[0]]}>
+      <Menu style={{height: '100%'}} onSelect={this.handleSelect} mode="inline" defaultOpenKeys={[Object.keys(menuList[0])[0]]}>
         {
           menuList.map( subMenu => {
             let key = Object.keys(subMenu)[0]
