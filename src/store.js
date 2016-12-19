@@ -1,13 +1,12 @@
 import thunkMiddleware from 'redux-thunk'
 import createLogger from 'redux-logger'
 import {createStore, applyMiddleware} from 'redux'
-import config from './config'
-
+const DEBUG = true
 export const createMyStore = function(rootReducer) {
   let middlewares = []
 	middlewares.push(thunkMiddleware)
   // middlewares for development
-	if (config.debug) {
+	if (DEBUG) {
 		// middleware that logs the global state for debug
 		const loggerMiddleware = createLogger({
 			stateTransformer: (state) => {
