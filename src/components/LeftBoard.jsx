@@ -11,7 +11,7 @@ const LeftBoard = React.createClass({
   render(){
     const {menuList} = this.props
     return (
-      <Menu mode="inline">
+      <Menu style={{height: '100%'}} mode="inline" defaultOpenKeys={[Object.keys(menuList[0])[0]]}>
         {
           menuList.map( subMenu => {
             let key = Object.keys(subMenu)[0]

@@ -10,11 +10,11 @@ const NoticeManagerContainer = React.createClass({
   },
   render(){
     return (
-      <Row gutter={16}>
-        <Col span={6}>
+      <Row gutter={16} style={{height:'100%'}}>
+        <Col span={6} style={{height:'100%'}}>
           <LeftBoard menuList={this.props.menuList}/>
         </Col>
-        <Col>
+        <Col span={18}>
           <div>通知管理</div>
         </Col>
       </Row>

@@ -7,7 +7,7 @@ import NoticeManagerContainer from './container/NoticeManagerContainer'
 const routes = (
   <Router history={browserHistory}>
     <Route path='/' component={MainContainer}>
-      <Route path='/base-info' component={BaseInfoContainer}></Route>
+      <Route path='base-info' component={BaseInfoContainer}></Route>
       <Route path='notice-mgr' component={NoticeManagerContainer} />
     </Route>
   </Router>
